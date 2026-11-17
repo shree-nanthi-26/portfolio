@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Nantheeshwaran S | M.Sc. Software Systems Student & Aspiring Developer</title>
+  <meta name="description" content="Portfolio of Shree Nantheeshwaran S - M.Sc. Software Systems Student at Kongu Engineering College. Full-page cinematic scroll video experience with AI, Web, Mobile, and UI/UX projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Non-blocking Top Scroll & Buffer Indicator -->
+  <div id="top-progress-bar" style="position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, #f45b69, #ff8a65); z-index: 1000; transition: width 0.2s ease;"></div>
+
+  <!-- FIXED GLOBAL VIDEO CANVAS BACKGROUND (Controlled from Beginning to End of Portfolio) -->
+  <div class="global-canvas-background">
+    <canvas id="scroll-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+    <div class="canvas-scrim-left"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span>SHREE NANTHEESHWARAN S</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FOREGROUND PORTFOLIO CONTENT LAYER -->
+  <div class="content-layer">
+
+    <!-- 1. HOME (HERO SECTION) -->
+    <section id="home" class="hero-fullpage-section">
+      <div class="hero-content-box">
+        <span class="hero-subtitle">M.Sc. Software Systems Student | Aspiring Software Developer</span>
+        <h1 class="hero-headline">Shree Nantheeshwaran S</h1>
+        <p class="hero-tagline">
+          Building ideas into practical digital solutions.
+        </p>
+        <p class="hero-description">
+          I am an enthusiastic M.Sc. Software Systems student at Kongu Engineering College, interested in software development, web technologies, UI/UX design, and emerging technologies. I enjoy learning new technologies, developing creative applications, and solving real-world problems through programming.
+        </p>
+        <div class="hero-tags-row">
+          <span class="hero-tag-pill">Software Development</span>
+          <span class="hero-tag-pill">Web Development</span>
+          <span class="hero-tag-pill">UI/UX Design</span>
+          <span class="hero-tag-pill">Artificial Intelligence</span>
+          <span class="hero-tag-pill">Graphic Design</span>
+        </div>
+        <div class="hero-actions-row">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#about" class="btn-secondary">About Me</a>
+        </div>
+        <div class="scroll-indicator-pill" id="scroll-pill">
+          <span>Scroll down to scrub animation across full portfolio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT WRAPPER FOR SECTIONS -->
+    <main class="content-wrapper">
+
+      <!-- 2. ABOUT SECTION -->
+      <section id="about" class="portfolio-section">
+        <div class="section-header">
+          <span class="section-tag">01. ABOUT ME</span>
+          <h2 class="section-title">Passionate Student & Aspiring Software Developer</h2>
+          <p class="section-subtitle">
+            Turning ideas into practical digital solutions through technology, creativity, and code.
+          </p>
+        </div>
+
+        <!-- Balanced 2-Column Desktop Layout: Introduction & Goal on Left, Quick Info on Right -->
+        <div class="about-grid">
+          <div class="about-card">
+            <p class="about-bio-text">
+              Hello! I'm <strong>Shree Nantheeshwaran S</strong>, a passionate software systems student at <strong>Kongu Engineering College</strong> with an active interest in technology, programming, and creative problem-solving.
+            </p>
+
+            <p class="about-bio-text">
+              I am continuously improving my technical knowledge through academic learning, personal projects, hackathons, and practical development. I enjoy exploring new ideas and transforming them into useful, accessible applications.
+            </p>
+
+            <p class="about-bio-text">
+              I have hands-on experience working with programming languages, modern web technologies, databases, and development tools. My goal is to write clean, maintainable code and develop solutions that address real-world challenges.
+            </p>
+
+            <div class="goal-box">
+              <div class="goal-title">Professional Goal</div>
+              <p class="goal-text">
+                My objective is to continuously improve my programming and software development skills, gain practical industry experience, and build innovative applications that solve real-world challenges. I am interested in collaborating with developers, participating in technical projects, and exploring opportunities to grow in the technology industry.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Information Cards -->
+          <div class="quick-info-grid">
+            <div class="quick-info-card">
+              <div class="quick-info-content">
+                <span class="quick-info-label">Current Degree</span>
+                <span class="quick-info-value">M.Sc. Software Systems (5-Year)</span>
+              </div>
+            </div>
+
+            <div class="quick-info-card">
+              <div class="quick-info-content">
+                <span class="quick-info-label">Institution</span>
+                <span class="quick-info-value">Kongu Engineering College, Erode</span>
+              </div>
+            </div>
+
+            <div class="quick-info-card">
+              <div class="quick-info-content">
+                <span class="quick-info-label">Key Certifications</span>
+                <span class="quick-info-value">Oracle AI Foundations & NPTEL Elite</span>
+              </div>
+            </div>
+
+            <div class="quick-info-card">
+              <div class="quick-info-content">
+                <span class="quick-info-label">Primary Interests</span>
+                <span class="quick-info-value">Software Dev · Web Tech · UI/UX · AI</span>
+              </div>
+            </div>
+
+            <div class="quick-info-card">
+              <div class="quick-info-content">
+                <span class="quick-info-label">Location</span>
+                <span class="quick-info-value">Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <div class="quick-info-card">
+              <div class="quick-info-content">
+                <span class="quick-info-label">Opportunity Status</span>
+                <span class="quick-info-value" style="color: var(--accent);">Open for Internships & Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placed below introduction: Education Timeline & Achievements Cards -->
+        <div class="about-secondary-grid">
+          <!-- Education Timeline -->
+          <div>
+            <h3 class="sub-section-title">Education</h3>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <span class="timeline-degree">M.Sc. Software Systems (5-Year Integrated)</span>
+                  <span class="timeline-period">2024 – 2029</span>
+                </div>
+                <div class="timeline-institution">Kongu Engineering College, Erode, Tamil Nadu</div>
+                <ul class="timeline-bullets">
+                  <li>Learning programming and core software development.</li>
+                  <li>Developing knowledge of data structures and algorithms.</li>
+                  <li>Exploring web and application development.</li>
+                  <li>Working on academic and independent software projects.</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <span class="timeline-degree">Higher Secondary – Biology Group</span>
+                  <span class="timeline-period">2022 – 2024</span>
+                </div>
+                <div class="timeline-institution">Sri Venkateswara Matric. Hr. Sec. School, Gobichettipalayam</div>
+                <ul class="timeline-bullets">
+                  <li>Completed higher secondary education.</li>
+                  <li>Participated in extracurricular activities and institutional events.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievements in Separate Attractive Cards -->
+          <div>
+            <h3 class="sub-section-title">Key Achievements</h3>
+            <div class="achievements-cards-grid">
+              <div class="achievement-card">
+                <div>
+                  <div class="achievement-card-title">First Place Winner — Poster Making</div>
+                  <div class="achievement-card-desc">
+                    First Place Winner in a Creative Poster Making Competition at Kongu Engineering College.
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div>
+                  <div class="achievement-card-title">NPTEL Elite Certification (85%)</div>
+                  <div class="achievement-card-desc">
+                    Completed NPTEL's Generative AI for Computer Vision course with 85% score and 4 recommended credits.
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div>
+                  <div class="achievement-card-title">Technical Projects & Learning</div>
+                  <div class="achievement-card-desc">
+                    Participated in technical learning, hands-on development, and collaborative software projects.
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div>
+                  <div class="achievement-card-title">NCC Activities & Leadership</div>
+                  <div class="achievement-card-desc">
+                    Participated in NCC disciplined training activities and institutional campus events.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. PROJECTS SECTION -->
+      <section id="projects" class="portfolio-section">
+        <div class="section-header">
+          <span class="section-tag">02. FEATURED WORK</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Practical digital solutions built across healthcare technology, web development, and artificial intelligence.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Smart Heartbeat Tracker -->
+          <article class="project-card">
+            <div>
+              <span class="project-badge">Healthcare Technology</span>
+              <h3 class="project-title">Smart Heartbeat Tracker</h3>
+              <p class="project-desc">
+                A mobile application designed to monitor users' heart rates through smartwatches and Google Fit integration.
+              </p>
+              <ul class="project-features">
+                <li>Real-time heart rate monitoring.</li>
+                <li>Abnormal heart rate alerts.</li>
+                <li>Health record maintenance.</li>
+                <li>Integration with wearable devices.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Google Fit API</span>
+              <span class="tech-tag">Healthcare Tech</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Blood Bank Management System -->
+          <article class="project-card">
+            <div>
+              <span class="project-badge">Web Development</span>
+              <h3 class="project-title">Blood Bank Management System</h3>
+              <p class="project-desc">
+                A web-based application designed to manage blood donors, blood availability and emergency blood requests.
+              </p>
+              <ul class="project-features">
+                <li>Donor registration.</li>
+                <li>Blood group management.</li>
+                <li>Blood availability tracking.</li>
+                <li>Emergency blood request management.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Violence Detection System -->
+          <article class="project-card">
+            <div>
+              <span class="project-badge">Artificial Intelligence and Computer Vision</span>
+              <h3 class="project-title">Violence Detection System</h3>
+              <p class="project-desc">
+                An intelligent security system designed to analyse video streams and identify violent activities using computer vision techniques.
+              </p>
+              <ul class="project-features">
+                <li>Video stream monitoring.</li>
+                <li>Violence detection.</li>
+                <li>Computer vision-based analysis.</li>
+                <li>Automated identification of suspicious activities.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">YOLOv5</span>
+              <span class="tech-tag">OpenCV</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. SKILLS SECTION -->
+      <section id="skills" class="portfolio-section">
+        <div class="section-header">
+          <span class="section-tag">03. TECHNICAL SKILLS</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Core competencies organized across programming languages, web, databases, mobile, tools, and UI/UX design.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- 1. Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Python</span>
+            </div>
+          </div>
+
+          <!-- 2. Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">Web Development</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Node.js</span>
+            </div>
+          </div>
+
+          <!-- 3. Database Technologies -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">Database Technologies</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">Firebase</span>
+            </div>
+          </div>
+
+          <!-- 4. Mobile Application Development -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">Mobile Development</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill">Flutter</span>
+            </div>
+          </div>
+
+          <!-- 5. Tools and Platforms -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">Tools & Platforms</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">AWS Basics</span>
+            </div>
+          </div>
+
+          <!-- 6. Design Skills -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <h3 class="skill-cat-title">UI/UX & Design</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill">UI/UX Design</span>
+              <span class="skill-pill">Graphic Design</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Canva</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Areas of Interest -->
+        <div style="margin-top: 48px; border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 24px;">
+          <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent);">
+            Areas of Interest
+          </h4>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill">Software Engineering</span>
+            <span class="skill-pill">Full-Stack Web Development</span>
+            <span class="skill-pill">Artificial Intelligence</span>
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">Cybersecurity</span>
+            <span class="skill-pill">UI/UX Design</span>
+            <span class="skill-pill">Graphic Design</span>
+            <span class="skill-pill">Mobile Application Development</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. CERTIFICATIONS SECTION -->
+      <section id="certifications" class="portfolio-section">
+        <div class="section-header">
+          <span class="section-tag">04. CREDENTIALS</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">
+            Professional certifications, competitive examination scores, and continuous technical learning.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- 1. Oracle Certification Card -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-badge-gold">Oracle Certified Associate</div>
+              <h3 class="cert-title">Oracle Fusion AI Agent Studio Certified Foundations Associate</h3>
+              <div class="cert-detail-row">
+                <span class="cert-label">Organization</span>
+                <span class="cert-val" style="color: var(--accent-gold); font-weight: 800;">Oracle</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Level</span>
+                <span class="cert-val">Foundations Associate</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Release</span>
+                <span class="cert-val">Rel 1</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Issue Date</span>
+                <span class="cert-val">May 07, 2026</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Certificate ID</span>
+                <span class="cert-val" style="font-family: monospace; font-size: 0.85rem; letter-spacing: 0.03em;">103456272OFAASOFA</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Recipient</span>
+                <span class="cert-val">Shree Nantheeshwaran S</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. NPTEL Certification Card -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-badge-gold">NPTEL Elite Certification</div>
+              <h3 class="cert-title">Generative AI for Computer Vision</h3>
+              <div class="cert-detail-row">
+                <span class="cert-label">Platform</span>
+                <span class="cert-val" style="color: var(--accent); font-weight: 800;">NPTEL</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Final Score</span>
+                <span class="cert-val" style="color: #fff; font-weight: 800;">85% (Elite)</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Duration</span>
+                <span class="cert-val">12 Weeks</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Session</span>
+                <span class="cert-val">July – October 2026</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Credits</span>
+                <span class="cert-val">4 Recommended Credits</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Recipient</span>
+                <span class="cert-val">Shree Nantheeshwaran S</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Technical Learning & Additional Certifications Card -->
+          <div class="cert-card">
+            <div>
+              <span class="project-badge">Coursework & Foundations</span>
+              <h3 class="cert-title">Other Learning & Certifications</h3>
+              <div class="cert-detail-row">
+                <span class="cert-label">C++ Programming</span>
+                <span class="cert-val">Great Learning</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">AWS Fundamentals</span>
+                <span class="cert-val">S3, IAM, EC2, RDS Exposure</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Academic Program</span>
+                <span class="cert-val">M.Sc. Software Systems</span>
+              </div>
+              <div class="cert-detail-row">
+                <span class="cert-label">Institution</span>
+                <span class="cert-val">Kongu Engg. College</span>
+              </div>
+            </div>
+            <div style="margin-top: 24px;">
+              <a href="#contact" class="nav-cta" style="width: 100%; justify-content: center; padding: 12px;">
+                Request Full Academic Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CONTACT SECTION -->
+      <section id="contact" class="portfolio-section">
+        <div class="section-header">
+          <span class="section-tag">05. CONTACT</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Interested in collaborating on innovative software projects, internships, or technical discussions? Let's connect!
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Left Column: Personal Info & Channels -->
+          <div class="contact-info-card">
+            <h3 style="color: #fff; font-size: 1.35rem; font-weight: 750; margin-bottom: 8px;">Shree Nantheeshwaran S</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              M.Sc. Software Systems student at Kongu Engineering College. Actively seeking software development internships, project collaborations, and technical opportunities.
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel-item">
+                <div class="contact-channel-meta">
+                  <span class="contact-channel-name">Location</span>
+                  <span class="contact-channel-val">Tamil Nadu, India</span>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="contact-channel-meta">
+                  <span class="contact-channel-name">Institution</span>
+                  <span class="contact-channel-val">Kongu Engineering College</span>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="contact-channel-meta">
+                  <span class="contact-channel-name">GitHub Profile</span>
+                  <span class="contact-channel-val">Profile Available on Resume / Request</span>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="contact-channel-meta">
+                  <span class="contact-channel-name">LinkedIn Profile</span>
+                  <span class="contact-channel-val">Profile Available on Resume / Request</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Direct Message Form -->
+          <div class="contact-form-card">
+            <h3 style="color: #fff; font-size: 1.3rem; font-weight: 750; margin-bottom: 20px;">Send a Direct Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you, Shree Nantheeshwaran has received your message!');">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Your Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-msg">Message or Inquiry</label>
+                <textarea id="contact-msg" class="form-textarea" placeholder="Discussing an internship, project, or software opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+      <div class="footer-inner">
+        <div class="footer-brand-info">
+          <div class="footer-name">SHREE NANTHEESHWARAN S</div>
+          <div class="footer-role">M.Sc. Software Systems Student · Kongu Engineering College</div>
+        </div>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Shree Nantheeshwaran S. Designed & developed with continuous scroll animation physics.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Script Initialization -->
+  <script src="scroll-animation.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const topProgressBar = document.getElementById('top-progress-bar');
+      const scrollPill = document.getElementById('scroll-pill');
+
+      // Initialize the SmoothScrollVideo controller across the entire page (globalScroll: true)
+      const scrollVideo = new SmoothScrollVideo({
+        canvas: '#scroll-canvas',
+        globalScroll: true, // Continuously scrubs from the top of the page to the bottom
+        totalFrames: 300,
+        framePath: (idx) => `frames/ezgif-frame-${String(idx).padStart(3, '0')}.jpg`,
+        lerpFactor: 0.08,
+        fitMode: 'cover',
+        onLoadProgress: (pct) => {
+          if (topProgressBar) {
+            topProgressBar.style.width = Math.round(pct * 100) + '%';
+            if (pct >= 1) {
+              setTimeout(() => { topProgressBar.style.opacity = '0'; }, 500);
+            }
+          }
+        },
+        onProgress: (prog) => {
+          if (scrollPill) {
+            scrollPill.style.opacity = prog > 0.04 ? '0' : '1';
+          }
+        }
+      });
+
+      // Active navigation scrollspy
+      const navLinks = document.querySelectorAll('.nav-links a');
+      const sections = document.querySelectorAll('section[id]');
+
+      window.addEventListener('scroll', () => {
+        let current = 'home';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 140;
+          if (window.scrollY >= top) {
+            current = sec.getAttribute('id');
+          }
+        });
+
+        // Update Active Nav Link
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      }, { passive: true });
+    });
+  </script>
+</body>
+</html>
